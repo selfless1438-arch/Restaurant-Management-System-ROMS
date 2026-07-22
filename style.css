@@ -1,0 +1,84 @@
+* {
+    transition: 0.3s all ease
+}
+
+#sidebar.me_closed {
+    width: 80px;
+}
+
+#sidebar.me_closed .me_appName {
+    display: none;
+}
+
+#sidebar.me_closed #toggleBtn {
+    opacity: 0;
+}
+
+#sidebar.me_closed #toggleBtn:hover {
+    opacity: 1;
+}
+
+#sidebar.me_closed ul li a {
+    justify-content: center;
+}
+
+#sidebar.me_closed ul li a span {
+    display: none;
+}
+
+#sidebar.me_closed~.me_cover {
+    width: calc(100vw - 80px - 1rem);
+    left: 80px;
+}
+
+
+#sidebar ul li a.active {
+    border-radius: 0 50px 50px 0;
+    background: linear-gradient(135deg, #FE8104, #ffbb00);
+    color: white;
+}
+
+
+/* soso animation */
+
+.me_sos {
+    opacity: 0;
+    transition: 0s all !important;
+    animation: sos 1s infinite linear;
+}
+
+@keyframes sos {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.me_bg_liner {
+    background: linear-gradient(135deg, #FE8104, #ffbb00);
+    color: white;
+}
+
+/* modals */
+
+.me_modal {
+    display: none;
+}
+
+.me_modal.active {
+    display: flex;
+}
+
+/* buttons default */
+button{
+    cursor: pointer !important;
+}
+
+form input.alert::placeholder{
+    color: red !important;
+    opacity: 1;
+}
